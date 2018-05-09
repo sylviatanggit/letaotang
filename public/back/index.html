@@ -31,6 +31,10 @@
       left: 0;
       top: 0;
       z-index: 999;
+      transition: all 1s;
+    }
+    .left.hideleft{
+      left: -180px;
     }
     .left .lt_fixed{
       width: 180px;
@@ -40,20 +44,18 @@
       font-size: 24px;
       background-color: #367FA9;
       color: #ffffff;
-
     }
     
-
+    
     .lt_pic{
       text-align: center;
     }
-   .lt_pic img{
-     width: 80px;
-     height: 80px;
-     border-radius:  50%;
-     margin-top: 30px;
-
-   }
+    .lt_pic img{
+      width: 80px;
+      height: 80px;
+      border-radius:  50%;
+      margin-top: 30px;
+    }
     .lt_pic p{
       text-align: center;
       color: #fff;
@@ -61,11 +63,11 @@
       height: 30px;
       line-height: 30px;
     }
-   .left .manage{
-     line-height: 45px;
-     text-align: center;
-     margin-top: 30px;
-   }
+    .left .manage{
+      line-height: 45px;
+      text-align: center;
+      margin-top: 30px;
+    }
     .left .manage a{
       display: block;
       border-left: 2px solid transparent;
@@ -76,7 +78,7 @@
     }
     .left .manage li.active{
       background-color: black;
-      border-left: 2px solid blue;
+      border-left: 2px solid blue ;
     }
     .pd_sm{
       padding-left: 10px;
@@ -85,7 +87,12 @@
       min-height: 1000px;
       background-color: pink;
       padding-left: 180px;
+      transition: all 1s;
     }
+    .right.hideleft{
+      padding-left: 0px;
+    }
+
     
     .right .It_top{
       width: 100%;
@@ -95,82 +102,126 @@
       left: 0;
       top: 0;
       padding-left: 200px;
+      transition: all 1s;
+    }
+     .It_top.hideleft{
+      padding-left: 0px;
     }
     
-   .It_top a{
+    .It_top a{
       width: 50px;
       height: 50px;
       display: block;
-      line-height: 0px;
+      line-height: 50px;
       color: #ffffff;
     }
+    
     .It_top a i{
       font-size: 20px;
     }
-
+    .main{
+      padding-top:  50px;
+    }
+    .main .breadcrumb{
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="left">
-    <div class="lt_fixed">黑马20期</div>
-    <div class="lt_pic">
-      <img src="./images/default.jpg" alt="">
-      <p>超级管理员</p>
-    </div>
-    <ul class="manage">
-      <li class="active">
-        <a href="user.html" >
-         
-          <i class="glyphicon glyphicon-user"></i>
-          <span>用户管理</span>
-        </a>
-      </li>
-      <li>
-        <a href="javascript:;">
-
-          <i class="glyphicon glyphicon-list"></i>
-          <span>分类管理</span>
-        </a>
-        <a href="" class="pd_sm">
-          <span>一级分类</span>
-        </a>
-        <a href="" class="pd_sm">
-          <span>二级分类</span>
-        </a>
-      </li>
-       <li>
-        <a href="product.html">
-          <i class="glyphicon glyphicon-tags"></i>
-          <span>商品管理</span>
-        </a>
-      </li>
-     
-    </ul>
+<div class="left">
+  <div class="lt_fixed">黑马20期</div>
+  <div class="lt_pic">
+    <img src="./images/default.jpg" alt="">
+    <p>超级管理员</p>
   </div>
-  <div class="right">
-    <div class="It_top">
-      <a href="" class=" pull-left ">
-        <i class="glyphicon glyphicon-align-justify "></i>
+  <ul class="manage">
+    <li class="active">
+      <a href="user.html" >
+        
+        <i class="glyphicon glyphicon-user"></i>
+        <span>用户管理</span>
       </a>
-      <a href="" class="mg_size  pull-right" >
-        <i class="glyphicon glyphicon-log-out"></i>
+    </li>
+    <li>
+      <a href="javascript:;" class="category">
+        
+        <i class="glyphicon glyphicon-list"></i>
+        <span>分类管理</span>
       </a>
-    </div>
-    <div class="container-fluid">
-    <!--路径导航-->
+      <div class="child" style="display:none;">
+        <a href="" class="pd_sm">
+           <span>一级分类</span>
+        </a>
+        <a href="" class="pd_sm">
+         <span>二级分类</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <a href="product.html">
+        <i class="glyphicon glyphicon-tags"></i>
+        <span>商品管理</span>
+      </a>
+    </li>
+  
+  </ul>
+</div>
+<div class="right">
+  <div class="It_top">
+    <a href="javascript:;" class="right_menu pull-left">
+      <i class="glyphicon glyphicon-align-justify "></i>
+    </a>
+    <a href="javascript:;" class="mg_size log-out pull-right" >
+      <i class="glyphicon glyphicon-log-out"></i>
+    </a>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="main">
       <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Library</a></li>
-        <li class="active">Data</li>
+        <li><a href="#">管理系统 </a></li>
+        <li class="active">商品管理</li>
       </ol>
+    
+    
     </div>
-   
+  
   </div>
 
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-  <script src="./lib/nprogress/nprogress.js"></script>
-  <script src="js/common.js"></script>
+</div>
+
+<!--模态框-->
+
+
+<div class="modal fade" id="logoutModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
