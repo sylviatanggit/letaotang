@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>乐淘商城</title>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+  <style>
+    /* lvha */
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
+    }
+    html,body{
+      height: 100%;
+      width: 100%;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .left{
+      width: 180px;
+      height: 100%;
+      background-color: #222D32;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+    }
+    .left .lt_fixed{
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 24px;
+      background-color: #367FA9;
+      color: #ffffff;
+      
+    }
+    
+    
+    .lt_pic{
+      text-align: center;
+    }
+    .lt_pic img{
+      width: 80px;
+      height: 80px;
+      border-radius:  50%;
+      margin-top: 30px;
+      
+    }
+    .lt_pic p{
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      height: 30px;
+      line-height: 30px;
+    }
+    .left .manage{
+      line-height: 45px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .left .manage a{
+      display: block;
+      border-left: 2px solid transparent;
+      color: white;
+    }
+    .left .manage a span{
+      margin-left: 3px;
+    }
+    .left .manage li.active{
+      background-color: black;
+      border-left: 2px solid blue;
+    }
+    .pd_sm{
+      padding-left: 10px;
+    }
+    .right{
+      min-height: 1000px;
+      background-color: pink;
+      padding-left: 180px;
+    }
+    
+    .right .It_top{
+      width: 100%;
+      height: 50px;
+      background-color: #367FA9;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-left: 200px;
+    }
+    
+    .It_top a{
+      width: 50px;
+      height: 50px;
+      display: block;
+      line-height: 50px;
+      color: #ffffff;
+    }
+    .It_top a i{
+      font-size: 20px;
+    }
+    .main{
+      padding-top:  50px;
+    }
+    .main .breadcrumb{
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="left">
+  <div class="lt_fixed">黑马20期</div>
+  <div class="lt_pic">
+    <img src="./images/default.jpg" alt="">
+    <p>超级管理员</p>
+  </div>
+  <ul class="manage">
+    <li class="active">
+      <a href="user.html" >
+        
+        <i class="glyphicon glyphicon-user"></i>
+        <span>用户管理</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        
+        <i class="glyphicon glyphicon-list"></i>
+        <span>分类管理</span>
+      </a>
+      <a href="" class="pd_sm">
+        <span>一级分类</span>
+      </a>
+      <a href="" class="pd_sm">
+        <span>二级分类</span>
+      </a>
+    </li>
+    <li>
+      <a href="product.html">
+        <i class="glyphicon glyphicon-tags"></i>
+        <span>商品管理</span>
+      </a>
+    </li>
+  
+  </ul>
+</div>
+<div class="right">
+  <div class="It_top">
+    <a href="" class=" pull-left ">
+      <i class="glyphicon glyphicon-align-justify "></i>
+    </a>
+    <a href="" class="mg_size  pull-right" >
+      <i class="glyphicon glyphicon-log-out"></i>
+    </a>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="main">
+      <ol class="breadcrumb">
+        <li><a href="#">管理系统 </a></li>
+        <li class="active">用户管理</li>
+      </ol>
+      
+      
+    </div>
+
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
