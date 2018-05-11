@@ -1,0 +1,12 @@
+INSERT INTO `user` VALUES ("",'jepson','lueSGJZetyySpUndWjMBEg==','15711112222',1);
+INSERT INTO `user` VALUES ("",'peter','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'amy','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'zhousong','lueSGJZetyySpUndWjMBEg==','15711133333',1);
+INSERT INTO `user` VALUES ("",'jepson','lueSGJZetyySpUndWjMBEg==','15711112222',1);
+INSERT INTO `user` VALUES ("",'peter','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'amy','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'zhousong','lueSGJZetyySpUndWjMBEg==','15711133333',1);
+INSERT INTO `user` VALUES ("",'jepson','lueSGJZetyySpUndWjMBEg==','15711112222',1);
+INSERT INTO `user` VALUES ("",'peter','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'amy','lueSGJZetyySpUndWjMBEg==','15711112222',0);
+INSERT INTO `user` VALUES ("",'zhousong','lueSGJZetyySpUndWjMBEg==','15711133333',1);

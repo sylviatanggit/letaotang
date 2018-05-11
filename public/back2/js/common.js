@@ -16,7 +16,6 @@ if ( location.href.indexOf("login.html") === -1 ) {
     url: "/employee/checkRootLogin",
     dataType: "json",
     success: function( info ) {
-      console.log( info );
       if ( info.error === 400 ) {
         location.href = "login.html";
       }
@@ -69,10 +68,8 @@ $(function() {
 
   // 2. 点击菜单按钮, 进行切换菜单
   $('.icon_menu').click(function() {
-    
     $('.lt_aside').toggleClass("hidemenu");
-    
-    // 当菜单隐藏时, lt_topbar, lt_main 都不需要 padding-left了
+    // 当菜单隐藏时, lt_topbar, lt_main 都不需要 padding-left 了
     $('.lt_topbar').toggleClass("hidemenu");
     $('.lt_main').toggleClass("hidemenu");
   });

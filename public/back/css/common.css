@@ -76,7 +76,7 @@ html,body{
 }
 .right{
   min-height: 1000px;
-  background-color: pink;
+
   padding-left: 180px;
   transition: all 1s;
 }
@@ -115,4 +115,17 @@ html,body{
 }
 .main .breadcrumb{
   margin-top: 20px;
+  margin-bottom: 25px;
 }
+
+/*index echarts*/
+  .lt_content .echarts1,
+  .lt_content .echarts2{
+    width: 48%;
+    height: 400px;
+  }
+  .table.table-bordered th,
+  .table.table-bordered td{
+    text-align: center;
+    vertical-align: middle;
+  }

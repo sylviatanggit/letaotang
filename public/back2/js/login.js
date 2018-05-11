@@ -103,6 +103,7 @@ $(function() {
           // 参数2: 校验状态  VALID成功  INVALID失败
           // 参数3: 校验规则(主要是用来设置, 提示信息的)
           $('#form').data("bootstrapValidator").updateStatus("password", "INVALID", "callback");
+
         }
 
         if ( info.error === 1000 ) {
