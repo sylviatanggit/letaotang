@@ -1,0 +1,10 @@
+.nav{
+  padding: 10px;
+}
+.nav li{
+  float: left;
+  width: 33.3%;
+}
+.nav li a{
+  display: block;
+}

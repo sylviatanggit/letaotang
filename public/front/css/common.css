@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+i{
+  color: #ffffff;
+}
+.common {
+  
+  width: 100%;
+  height: 100%;
+  min-width:  320px;
+  max-width:  640px;
+  /*background-color: red;*/
+  margin: 0 auto;
+  position: relative;
+  
+  padding-top: 45px;
+  padding-bottom: 55px;
+  
+
+}
+
+.common .top{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #006699;
+  padding-left: 45px;
+  padding-right: 45px;
+  overflow: hidden;
+}
+.common .title h3{
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+}
+.top .house{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+}
+
+.top .house i,
+.top .search i{
+   line-height: 45px;
+}
+
+
+.top .search{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 10px;
+}
+
+/* 底部 */
+.menu ul{
+  height: 55px;
+  width: 100%;
+  background-color: #006699;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.menu ul li{
+  width: 25%;
+  height: 55px;
+  float: left;
+  line-height: 55px;
+  text-align: center;
+}
+
+.menu ul li a{
+  color: #ffffff;
+}
+
+.common .main{
+  padding-top: 45px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/*公共的商品页*/
+.product{
+  padding: 10px;
+}
+.lt_product_item {
+  width: 48%;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius:  5px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.lt_product_item img{
+  width: 100%;
+}
+
+.lt_product_item a {
+  display: block;
+  padding: 10px;
+}
+
+.lt_product_item a .price {
+  color: #FF4141;
+}
+.lt_product_item .mui-ellipsis-2 {
+  height: 40px;
+}
+.mui-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

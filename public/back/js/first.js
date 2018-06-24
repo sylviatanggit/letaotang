@@ -36,7 +36,54 @@ $(function(){
 //  添加按钮
   $('#addBtn').click(function() {
     $('#addModal').modal("show");
+    
+    //进行表单校验
+    $('#form').bootstrapValidator({
+      
+      // 指定校验时的图标显示
+      feedbackIcons: {
+        // 校验成功的
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+      },
+      fields:{
+        categoryName:{
+          validators:{
+            notEmpty:{
+              message:"请输入一级分类"
+            }
+          }
+        }
+      }
+    });
+    
+    //阻止表单提交，
+    $('#form').on("success.form.bv",function( e ){
+      e.preventDefault();
+      
+      $.ajax({
+        type:"post",
+        url: "/category/addTopCategory",
+        data: $('#form').serialize(),
+        success:function( info ){
+          console.log(info);
+          if( info.success ){
+            $('#addModal').modal('hide');
+            currentpage = 1;
+            render();
+            
+          //  重置表单
+            $('#form').data("bootstrapValidator").resetForm( true );
+          }
+        }
+      })
+    })
+    
+    
   });
+  
+  
   
   
   

@@ -33,7 +33,6 @@ $(function () {
         if (data.error === 403) {
           mui.toast(data.message);
         }
-        
         if (data.success) {
           //成功了，怎么办？
           //如果是购物车这类页面跳转过来的，需要跳回去
